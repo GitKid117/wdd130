@@ -164,4 +164,42 @@ background-color: aquamarine;
     margin: 0.5rem 0;
 }
 
+.figure-container {
+    display: flex;
+}
 
+figure {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+table {
+    border: 2px solid navy;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+  
+th, td {
+    border: 1px solid navy;
+}
+
+th {
+  background-color: orange;
+}
+
+td {
+    background-color: aquamarine;
+}
