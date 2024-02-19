@@ -16,7 +16,7 @@
 }
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: none;
     padding: 20px;
     margin: 0 auto;
 }
@@ -58,6 +58,7 @@ nav a:hover {
 
 .hero {
     position: relative;
+    width: 100%;
 }
 
 .hero img {
@@ -202,4 +203,38 @@ th {
 
 td {
     background-color: aquamarine;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content p {
+    margin-bottom: 0;
 }
